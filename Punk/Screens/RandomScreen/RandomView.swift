@@ -51,7 +51,10 @@ struct RandomView: View {
         .multilineTextAlignment(.center)
 
         #if os(macOS)
-        content
+        NavigationView {
+            content
+                .frame(minWidth: 250)
+        }
         #else
         content
             .listStyle(InsetGroupedListStyle())

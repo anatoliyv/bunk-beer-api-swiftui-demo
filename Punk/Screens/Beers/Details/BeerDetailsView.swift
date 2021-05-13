@@ -13,6 +13,15 @@ struct BeerDetailsView: View {
     var body: some View {
         let content = ScrollView {
             VStack(alignment: .leading) {
+                #if os(macOS)
+                HStack {
+                    Spacer()
+                    favoriteButton
+                        .buttonStyle(BlueButtonStyle())
+                        .frame(width: 120, height: 50)
+                }
+                #endif
+
                 HStack {
                     Spacer()
                     BeerImageView(url: model.imageURL, width: 250)

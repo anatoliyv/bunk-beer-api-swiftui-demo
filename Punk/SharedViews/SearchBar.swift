@@ -17,7 +17,7 @@ struct SearchBar: View {
             TextField("Search...", text: $text)
                 .padding(7)
                 .padding(.horizontal, 15)
-                .background(Color(.systemGray6))
+                .background(Color.gray.opacity(0.2))
                 .cornerRadius(8)
                 .padding(.horizontal, 10)
                 .onTapGesture {
@@ -27,7 +27,9 @@ struct SearchBar: View {
             if isEditing {
                 Button(
                     action: {
+                        #if os(iOS)
                         UIApplication.shared.endEditing()
+                        #endif
                         self.isEditing = false
                         self.text = ""
                     }, label: {

@@ -35,7 +35,10 @@ struct FavoritesView: View {
         }
 
         #if os(macOS)
-        content
+        NavigationView {
+            content
+                .frame(minWidth: 250)
+        }
         #else
         content
             .listStyle(InsetGroupedListStyle())

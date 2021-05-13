@@ -13,6 +13,37 @@
 		EF68C97A264D737B00CF2F7C /* BeerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C979264D737B00CF2F7C /* BeerImageView.swift */; };
 		EF68C97F264D9C1500CF2F7C /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C97E264D9C1500CF2F7C /* BeerViewModel.swift */; };
 		EF68C982264D9E2700CF2F7C /* BeerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C981264D9E2700CF2F7C /* BeerDetailsView.swift */; };
+		EF68C9BF264DA0DF00CF2F7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF68C9BE264DA0DF00CF2F7C /* Preview Assets.xcassets */; };
+		EF68C9C5264DA10A00CF2F7C /* PunkAppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF700E264D2781009EFC16 /* PunkAppTabView.swift */; };
+		EF68C9C6264DA10D00CF2F7C /* PunkAppTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7010264D279E009EFC16 /* PunkAppTabViewModel.swift */; };
+		EF68C9C8264DA11100CF2F7C /* View+toAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7013264D29D4009EFC16 /* View+toAnyView.swift */; };
+		EF68C9C9264DA11400CF2F7C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7027264D43E4009EFC16 /* APIError.swift */; };
+		EF68C9CA264DA11400CF2F7C /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FFA264D263B009EFC16 /* Beer.swift */; };
+		EF68C9CB264DA11800CF2F7C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C975264D6E8D00CF2F7C /* SearchBar.swift */; };
+		EF68C9CC264DA11800CF2F7C /* BeerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C979264D737B00CF2F7C /* BeerImageView.swift */; };
+		EF68C9CD264DA11800CF2F7C /* LoadingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7029264D4539009EFC16 /* LoadingCellView.swift */; };
+		EF68C9CE264DA11800CF2F7C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF702B264D48B3009EFC16 /* ErrorView.swift */; };
+		EF68C9CF264DA12100CF2F7C /* BeerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7017264D2F56009EFC16 /* BeerCellView.swift */; };
+		EF68C9D0264DA12100CF2F7C /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C97E264D9C1500CF2F7C /* BeerViewModel.swift */; };
+		EF68C9D1264DA12100CF2F7C /* BrewedBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF702F264D4DD8009EFC16 /* BrewedBadgeView.swift */; };
+		EF68C9D2264DA12500CF2F7C /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FFC264D2666009EFC16 /* BeersViewModel.swift */; };
+		EF68C9D3264DA12500CF2F7C /* BeerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C981264D9E2700CF2F7C /* BeerDetailsView.swift */; };
+		EF68C9D4264DA12500CF2F7C /* BeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FEB264D257D009EFC16 /* BeersView.swift */; };
+		EF68C9D5264DA12700CF2F7C /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7002264D26AE009EFC16 /* RandomViewModel.swift */; };
+		EF68C9D6264DA12700CF2F7C /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7000264D26A7009EFC16 /* RandomView.swift */; };
+		EF68C9D7264DA12A00CF2F7C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7008264D26FC009EFC16 /* FavoritesView.swift */; };
+		EF68C9D8264DA12A00CF2F7C /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF700A264D270A009EFC16 /* FavoritesViewModel.swift */; };
+		EF68C9D9264DA13000CF2F7C /* FiniteStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7019264D2F82009EFC16 /* FiniteStateViewModel.swift */; };
+		EF68C9DA264DA13000CF2F7C /* BeerModelsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7033264D5E1C009EFC16 /* BeerModelsRepository.swift */; };
+		EF68C9DB264DA13000CF2F7C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF701E264D3797009EFC16 /* API.swift */; };
+		EF68C9DC264DA13000CF2F7C /* BeerDisplayingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7035264D5EF9009EFC16 /* BeerDisplayingProtocol.swift */; };
+		EF68C9DD264DA13000CF2F7C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FFE264D2694009EFC16 /* AppState.swift */; };
+		EF68C9DE264DA13000CF2F7C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7020264D3985009EFC16 /* Endpoint.swift */; };
+		EF68C9DF264DA13000CF2F7C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7022264D39C6009EFC16 /* APIClient.swift */; };
+		EF68C9E0264DA13000CF2F7C /* BlueButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C973264D6B9E00CF2F7C /* BlueButtonStyle.swift */; };
+		EF68C9E1264DA13000CF2F7C /* PathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7024264D3A26009EFC16 /* PathGenerator.swift */; };
+		EF68C9E3264DA1F200CF2F7C /* PunkMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C9E2264DA1F200CF2F7C /* PunkMacOSApp.swift */; };
+		EF68C9E6264DA25200CF2F7C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EF68C9E5264DA25200CF2F7C /* SDWebImageSwiftUI */; };
 		EFCF6FBB264D24D2009EFC16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCF6FBA264D24D2009EFC16 /* Preview Assets.xcassets */; };
 		EFCF6FC6264D24D2009EFC16 /* PunkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FC5264D24D2009EFC16 /* PunkTests.swift */; };
 		EFCF6FD1264D24D2009EFC16 /* PunkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FD0264D24D2009EFC16 /* PunkUITests.swift */; };
@@ -70,7 +101,11 @@
 		EF68C97B264D78EA00CF2F7C /* Punk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Punk.entitlements; sourceTree = "<group>"; };
 		EF68C97E264D9C1500CF2F7C /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
 		EF68C981264D9E2700CF2F7C /* BeerDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailsView.swift; sourceTree = "<group>"; };
-		EFCF6FB0264D24D0009EFC16 /* Punk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF68C9B5264DA0DE00CF2F7C /* Punk (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Punk (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF68C9BE264DA0DF00CF2F7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF68C9C0264DA0DF00CF2F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF68C9E2264DA1F200CF2F7C /* PunkMacOSApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunkMacOSApp.swift; sourceTree = "<group>"; };
+		EFCF6FB0264D24D0009EFC16 /* Punk (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Punk (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCF6FBA264D24D2009EFC16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFCF6FC1264D24D2009EFC16 /* PunkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCF6FC5264D24D2009EFC16 /* PunkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkTests.swift; sourceTree = "<group>"; };
@@ -108,6 +143,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EF68C9B2264DA0DE00CF2F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF68C9E6264DA25200CF2F7C /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCF6FAD264D24D0009EFC16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +184,31 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		EF68C9B6264DA0DE00CF2F7C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C9C0264DA0DF00CF2F7C /* Info.plist */,
+				EF68C9E2264DA1F200CF2F7C /* PunkMacOSApp.swift */,
+				EF68C9BD264DA0DF00CF2F7C /* Preview Content */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		EF68C9BD264DA0DF00CF2F7C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C9BE264DA0DF00CF2F7C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF68C9E4264DA25200CF2F7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EFCF6FA7264D24D0009EFC16 = {
 			isa = PBXGroup;
 			children = (
@@ -148,15 +216,17 @@
 				EFCF6FC4264D24D2009EFC16 /* PunkTests */,
 				EFCF6FCF264D24D2009EFC16 /* PunkUITests */,
 				EFCF6FB1264D24D0009EFC16 /* Products */,
+				EF68C9E4264DA25200CF2F7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EFCF6FB1264D24D0009EFC16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFCF6FB0264D24D0009EFC16 /* Punk.app */,
+				EFCF6FB0264D24D0009EFC16 /* Punk (iOS).app */,
 				EFCF6FC1264D24D2009EFC16 /* PunkTests.xctest */,
 				EFCF6FCC264D24D2009EFC16 /* PunkUITests.xctest */,
+				EF68C9B5264DA0DE00CF2F7C /* Punk (macOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +292,7 @@
 		EFCF6FE6264D257D009EFC16 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EF68C9B6264DA0DE00CF2F7C /* macOS */,
 				EFCF6FE8264D257D009EFC16 /* Info.plist */,
 				EFCF6FE7264D257D009EFC16 /* PunkApp.swift */,
 				EFCF700E264D2781009EFC16 /* PunkAppTabView.swift */,
@@ -337,9 +408,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EFCF6FAF264D24D0009EFC16 /* Punk */ = {
+		EF68C9B4264DA0DE00CF2F7C /* Punk (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFCF6FD5264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "Punk" */;
+			buildConfigurationList = EF68C9C2264DA0DF00CF2F7C /* Build configuration list for PBXNativeTarget "Punk (macOS)" */;
+			buildPhases = (
+				EF68C9B1264DA0DE00CF2F7C /* Sources */,
+				EF68C9B2264DA0DE00CF2F7C /* Frameworks */,
+				EF68C9B3264DA0DE00CF2F7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Punk (macOS)";
+			packageProductDependencies = (
+				EF68C9E5264DA25200CF2F7C /* SDWebImageSwiftUI */,
+			);
+			productName = "Punk (macOS)";
+			productReference = EF68C9B5264DA0DE00CF2F7C /* Punk (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFCF6FAF264D24D0009EFC16 /* Punk (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCF6FD5264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "Punk (iOS)" */;
 			buildPhases = (
 				EFCF6FAC264D24D0009EFC16 /* Sources */,
 				EFCF6FAD264D24D0009EFC16 /* Frameworks */,
@@ -350,12 +441,12 @@
 			);
 			dependencies = (
 			);
-			name = Punk;
+			name = "Punk (iOS)";
 			packageProductDependencies = (
 				EFCF701C264D3648009EFC16 /* SDWebImageSwiftUI */,
 			);
 			productName = Punk;
-			productReference = EFCF6FB0264D24D0009EFC16 /* Punk.app */;
+			productReference = EFCF6FB0264D24D0009EFC16 /* Punk (iOS).app */;
 			productType = "com.apple.product-type.application";
 		};
 		EFCF6FC0264D24D2009EFC16 /* PunkTests */ = {
@@ -403,6 +494,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					EF68C9B4264DA0DE00CF2F7C = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					EFCF6FAF264D24D0009EFC16 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -432,7 +526,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFCF6FAF264D24D0009EFC16 /* Punk */,
+				EFCF6FAF264D24D0009EFC16 /* Punk (iOS) */,
+				EF68C9B4264DA0DE00CF2F7C /* Punk (macOS) */,
 				EFCF6FC0264D24D2009EFC16 /* PunkTests */,
 				EFCF6FCB264D24D2009EFC16 /* PunkUITests */,
 			);
@@ -440,6 +535,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EF68C9B3264DA0DE00CF2F7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF68C9BF264DA0DF00CF2F7C /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCF6FAE264D24D0009EFC16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +591,42 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EF68C9B1264DA0DE00CF2F7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF68C9D4264DA12500CF2F7C /* BeersView.swift in Sources */,
+				EF68C9D0264DA12100CF2F7C /* BeerViewModel.swift in Sources */,
+				EF68C9C5264DA10A00CF2F7C /* PunkAppTabView.swift in Sources */,
+				EF68C9E1264DA13000CF2F7C /* PathGenerator.swift in Sources */,
+				EF68C9DD264DA13000CF2F7C /* AppState.swift in Sources */,
+				EF68C9D5264DA12700CF2F7C /* RandomViewModel.swift in Sources */,
+				EF68C9DF264DA13000CF2F7C /* APIClient.swift in Sources */,
+				EF68C9CF264DA12100CF2F7C /* BeerCellView.swift in Sources */,
+				EF68C9E0264DA13000CF2F7C /* BlueButtonStyle.swift in Sources */,
+				EF68C9CC264DA11800CF2F7C /* BeerImageView.swift in Sources */,
+				EF68C9DA264DA13000CF2F7C /* BeerModelsRepository.swift in Sources */,
+				EF68C9CA264DA11400CF2F7C /* Beer.swift in Sources */,
+				EF68C9C6264DA10D00CF2F7C /* PunkAppTabViewModel.swift in Sources */,
+				EF68C9D3264DA12500CF2F7C /* BeerDetailsView.swift in Sources */,
+				EF68C9D7264DA12A00CF2F7C /* FavoritesView.swift in Sources */,
+				EF68C9DE264DA13000CF2F7C /* Endpoint.swift in Sources */,
+				EF68C9D8264DA12A00CF2F7C /* FavoritesViewModel.swift in Sources */,
+				EF68C9D6264DA12700CF2F7C /* RandomView.swift in Sources */,
+				EF68C9CB264DA11800CF2F7C /* SearchBar.swift in Sources */,
+				EF68C9CE264DA11800CF2F7C /* ErrorView.swift in Sources */,
+				EF68C9D1264DA12100CF2F7C /* BrewedBadgeView.swift in Sources */,
+				EF68C9DC264DA13000CF2F7C /* BeerDisplayingProtocol.swift in Sources */,
+				EF68C9DB264DA13000CF2F7C /* API.swift in Sources */,
+				EF68C9D2264DA12500CF2F7C /* BeersViewModel.swift in Sources */,
+				EF68C9CD264DA11800CF2F7C /* LoadingCellView.swift in Sources */,
+				EF68C9D9264DA13000CF2F7C /* FiniteStateViewModel.swift in Sources */,
+				EF68C9C8264DA11100CF2F7C /* View+toAnyView.swift in Sources */,
+				EF68C9E3264DA1F200CF2F7C /* PunkMacOSApp.swift in Sources */,
+				EF68C9C9264DA11400CF2F7C /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCF6FAC264D24D0009EFC16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,17 +685,67 @@
 /* Begin PBXTargetDependency section */
 		EFCF6FC3264D24D2009EFC16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EFCF6FAF264D24D0009EFC16 /* Punk */;
+			target = EFCF6FAF264D24D0009EFC16 /* Punk (iOS) */;
 			targetProxy = EFCF6FC2264D24D2009EFC16 /* PBXContainerItemProxy */;
 		};
 		EFCF6FCE264D24D2009EFC16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EFCF6FAF264D24D0009EFC16 /* Punk */;
+			target = EFCF6FAF264D24D0009EFC16 /* Punk (iOS) */;
 			targetProxy = EFCF6FCD264D24D2009EFC16 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		EF68C9C3264DA0DF00CF2F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Punk/Main/macOS/Punk-macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Punk/Main/macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Punk/Main/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EF68C9C4264DA0DF00CF2F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Punk/Main/macOS/Punk-macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Punk/Main/macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Punk/Main/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		EFCF6FD3264D24D2009EFC16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -689,9 +878,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.Punk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -713,9 +902,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.Punk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -808,6 +997,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EF68C9C2264DA0DF00CF2F7C /* Build configuration list for PBXNativeTarget "Punk (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF68C9C3264DA0DF00CF2F7C /* Debug */,
+				EF68C9C4264DA0DF00CF2F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EFCF6FAB264D24D0009EFC16 /* Build configuration list for PBXProject "Punk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -817,7 +1015,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFCF6FD5264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "Punk" */ = {
+		EFCF6FD5264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "Punk (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EFCF6FD6264D24D2009EFC16 /* Debug */,
@@ -858,6 +1056,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EF68C9E5264DA25200CF2F7C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFCF701B264D3648009EFC16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		EFCF701C264D3648009EFC16 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EFCF701B264D3648009EFC16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;

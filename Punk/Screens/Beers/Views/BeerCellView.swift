@@ -61,7 +61,6 @@ struct BeerCellView_Previews: PreviewProvider {
         let view = List {
             BeerCellView(model: model)
         }
-        .listStyle(InsetGroupedListStyle())
 
         return Group {
             view

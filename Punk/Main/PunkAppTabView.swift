@@ -19,24 +19,7 @@ struct PunkAppTabView: View {
             ("Favorites", model.favoritesImageName, FavoritesView(model: model.favoritesViewModel).toAnyView)
         ]
 
-        #if os(macOS)
-        NavigationView {
-            List {
-                Text("Punk")
-                ForEach(Array(zip(views.indices, views)), id: \.0) { index, view in
-                    NavigationLink(destination: view.view.padding()) {
-                        Label(view.name, systemImage: view.icon)
-                    }
-
-                    if index == 1 {
-                        Spacer()
-                        Text("More")
-                    }
-                }
-            }
-        }
-        .frame(width: 600, height: 450)
-        #else
+        #if os(iOS)
         TabView(selection: $model.tabIndex) {
             let data = Array(zip(views.indices, views))
             ForEach(data, id: \.0) { index, view in
@@ -47,6 +30,23 @@ struct PunkAppTabView: View {
                 .tabItem { Label(view.name, systemImage: view.icon) }
                 .tag(index)
             }
+        }
+        #else
+        NavigationView {
+            List {
+                Text("Punk")
+                ForEach(Array(zip(views.indices, views)), id: \.0) { index, view in
+                    NavigationLink(destination: view.view.padding()) {
+                        Label(view.name, systemImage: view.icon)
+                    }
+
+                    if index == 0 {
+                        Spacer()
+                        Text("More")
+                    }
+                }
+            }            
+            .listStyle(SidebarListStyle())
         }
         #endif
     }

@@ -38,7 +38,6 @@ struct BlueButtonStyle_Previews: PreviewProvider {
 
                 Spacer()
             }
-            .navigationBarHidden(true)
         }
 
         return Group {
