@@ -26,10 +26,7 @@ class BeersViewModel: ObservableObject, FiniteStateViewModel, BeerDisplayingProt
         self.appState = appState
 
         setupObservables()
-    }
-
-    func viewDidAppear() {
-        fetch()
+        load()
     }
 
     private func setupObservables() {
@@ -78,7 +75,7 @@ extension BeersViewModel {
             case .failure(let error):
                 self.state = .error(error)
             case .success(let content):
-                if !query.isEmpty && self.page.isFirst {
+                if self.page.isFirst {
                     self.beers = content
                 } else {
                     self.beers.append(contentsOf: content)

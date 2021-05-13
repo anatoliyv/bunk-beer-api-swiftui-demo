@@ -30,18 +30,14 @@ struct BeersView: View {
                                 }
                             }
                         }
+                    } else if !model.canLoadMore {
+                        Text("No results")
                     }
 
-                    if model.canLoadMore || model.beers.isEmpty {
+                    if model.canLoadMore {
                         Section {
                             LoadingCellView()
-                                .onAppear {
-                                    if model.beers.isEmpty {
-                                        model.viewDidAppear()
-                                    } else {
-                                        model.loadMore()
-                                    }
-                                }
+                                .onAppear { model.loadMore() }
                         }
                     }
                 }

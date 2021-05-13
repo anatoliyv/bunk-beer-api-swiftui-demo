@@ -62,6 +62,7 @@ extension AppState {
 
     private func loadFavoriteFromUserDefaults() {
         guard let ids = UserDefaults.standard.value(forKey: favoritesUserDefaultKey) as? [Int] else { return }
+        guard !ids.isEmpty else { return }
 
         let endpoint = Endpoint<[Beer]>(
             method: .get,
