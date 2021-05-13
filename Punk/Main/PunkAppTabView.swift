@@ -45,7 +45,7 @@ struct PunkAppTabView: View {
                         Text("More")
                     }
                 }
-            }            
+            }
             .listStyle(SidebarListStyle())
         }
         #endif
