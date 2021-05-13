@@ -25,3 +25,5 @@ In a reason it's a simple app some things made without future scalability in min
     it's id with `.joined(separator: "%7C")`. More complex API calls need full support of data encoding.
 
 - Unit / UI testing 🤘
+
+- Think about memory usage. SDWebImage has it's a lot. Also `BeerViewModel` has not clearing of cache.
