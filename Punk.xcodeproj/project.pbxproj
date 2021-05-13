@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF68C974264D6B9E00CF2F7C /* BlueButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C973264D6B9E00CF2F7C /* BlueButtonStyle.swift */; };
+		EF68C976264D6E8D00CF2F7C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C975264D6E8D00CF2F7C /* SearchBar.swift */; };
+		EF68C978264D6F6300CF2F7C /* UIApplication+EndEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C977264D6F6300CF2F7C /* UIApplication+EndEditing.swift */; };
+		EF68C97A264D737B00CF2F7C /* BeerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68C979264D737B00CF2F7C /* BeerImageView.swift */; };
+		EFCF6FBB264D24D2009EFC16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCF6FBA264D24D2009EFC16 /* Preview Assets.xcassets */; };
+		EFCF6FC6264D24D2009EFC16 /* PunkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FC5264D24D2009EFC16 /* PunkTests.swift */; };
+		EFCF6FD1264D24D2009EFC16 /* PunkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FD0264D24D2009EFC16 /* PunkUITests.swift */; };
+		EFCF6FF2264D257D009EFC16 /* PunkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FE7264D257D009EFC16 /* PunkApp.swift */; };
+		EFCF6FF4264D257D009EFC16 /* BeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FEB264D257D009EFC16 /* BeersView.swift */; };
+		EFCF6FF5264D257D009EFC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCF6FF0264D257D009EFC16 /* Assets.xcassets */; };
+		EFCF6FF8264D25AE009EFC16 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EFCF6FF7264D25AE009EFC16 /* README.md */; };
+		EFCF6FFB264D263B009EFC16 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FFA264D263B009EFC16 /* Beer.swift */; };
+		EFCF6FFD264D2666009EFC16 /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FFC264D2666009EFC16 /* BeersViewModel.swift */; };
+		EFCF6FFF264D2694009EFC16 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF6FFE264D2694009EFC16 /* AppState.swift */; };
+		EFCF7001264D26A7009EFC16 /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7000264D26A7009EFC16 /* RandomView.swift */; };
+		EFCF7003264D26AE009EFC16 /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7002264D26AE009EFC16 /* RandomViewModel.swift */; };
+		EFCF7005264D26D7009EFC16 /* BeerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7004264D26D7009EFC16 /* BeerDetailsView.swift */; };
+		EFCF7007264D26DE009EFC16 /* BeerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7006264D26DE009EFC16 /* BeerDetailsViewModel.swift */; };
+		EFCF7009264D26FC009EFC16 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7008264D26FC009EFC16 /* FavoritesView.swift */; };
+		EFCF700B264D270A009EFC16 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF700A264D270A009EFC16 /* FavoritesViewModel.swift */; };
+		EFCF700F264D2781009EFC16 /* PunkAppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF700E264D2781009EFC16 /* PunkAppTabView.swift */; };
+		EFCF7011264D279E009EFC16 /* PunkAppTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7010264D279E009EFC16 /* PunkAppTabViewModel.swift */; };
+		EFCF7014264D29D4009EFC16 /* View+toAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7013264D29D4009EFC16 /* View+toAnyView.swift */; };
+		EFCF7018264D2F56009EFC16 /* BeerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7017264D2F56009EFC16 /* BeerCellView.swift */; };
+		EFCF701A264D2F82009EFC16 /* FiniteStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7019264D2F82009EFC16 /* FiniteStateViewModel.swift */; };
+		EFCF701D264D3648009EFC16 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EFCF701C264D3648009EFC16 /* SDWebImageSwiftUI */; };
+		EFCF701F264D3797009EFC16 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF701E264D3797009EFC16 /* API.swift */; };
+		EFCF7021264D3985009EFC16 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7020264D3985009EFC16 /* Endpoint.swift */; };
+		EFCF7023264D39C6009EFC16 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7022264D39C6009EFC16 /* APIClient.swift */; };
+		EFCF7025264D3A26009EFC16 /* PathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7024264D3A26009EFC16 /* PathGenerator.swift */; };
+		EFCF7028264D43E4009EFC16 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7027264D43E4009EFC16 /* APIError.swift */; };
+		EFCF702A264D4539009EFC16 /* LoadingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7029264D4539009EFC16 /* LoadingCellView.swift */; };
+		EFCF702C264D48B3009EFC16 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF702B264D48B3009EFC16 /* ErrorView.swift */; };
+		EFCF702E264D4BA2009EFC16 /* BeerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF702D264D4BA2009EFC16 /* BeerCellViewModel.swift */; };
+		EFCF7030264D4DD8009EFC16 /* BrewedBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF702F264D4DD8009EFC16 /* BrewedBadgeView.swift */; };
+		EFCF7034264D5E1C009EFC16 /* BeerModelsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7033264D5E1C009EFC16 /* BeerModelsRepository.swift */; };
+		EFCF7036264D5EF9009EFC16 /* BeerDisplayingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF7035264D5EF9009EFC16 /* BeerDisplayingProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFCF6FC2264D24D2009EFC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCF6FA8264D24D0009EFC16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCF6FAF264D24D0009EFC16;
+			remoteInfo = Punk;
+		};
+		EFCF6FCD264D24D2009EFC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCF6FA8264D24D0009EFC16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCF6FAF264D24D0009EFC16;
+			remoteInfo = Punk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF68C973264D6B9E00CF2F7C /* BlueButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButtonStyle.swift; sourceTree = "<group>"; };
+		EF68C975264D6E8D00CF2F7C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		EF68C977264D6F6300CF2F7C /* UIApplication+EndEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+EndEditing.swift"; sourceTree = "<group>"; };
+		EF68C979264D737B00CF2F7C /* BeerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerImageView.swift; sourceTree = "<group>"; };
+		EF68C97B264D78EA00CF2F7C /* Punk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Punk.entitlements; sourceTree = "<group>"; };
+		EFCF6FB0264D24D0009EFC16 /* Punk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCF6FBA264D24D2009EFC16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFCF6FC1264D24D2009EFC16 /* PunkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCF6FC5264D24D2009EFC16 /* PunkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkTests.swift; sourceTree = "<group>"; };
+		EFCF6FCC264D24D2009EFC16 /* PunkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCF6FD0264D24D2009EFC16 /* PunkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkUITests.swift; sourceTree = "<group>"; };
+		EFCF6FDF264D24FE009EFC16 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCF6FE2264D250C009EFC16 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCF6FE7264D257D009EFC16 /* PunkApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunkApp.swift; sourceTree = "<group>"; };
+		EFCF6FE8264D257D009EFC16 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCF6FEB264D257D009EFC16 /* BeersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersView.swift; sourceTree = "<group>"; };
+		EFCF6FF0264D257D009EFC16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFCF6FF7264D25AE009EFC16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EFCF6FFA264D263B009EFC16 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		EFCF6FFC264D2666009EFC16 /* BeersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewModel.swift; sourceTree = "<group>"; };
+		EFCF6FFE264D2694009EFC16 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		EFCF7000264D26A7009EFC16 /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
+		EFCF7002264D26AE009EFC16 /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
+		EFCF7004264D26D7009EFC16 /* BeerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsView.swift; sourceTree = "<group>"; };
+		EFCF7006264D26DE009EFC16 /* BeerDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewModel.swift; sourceTree = "<group>"; };
+		EFCF7008264D26FC009EFC16 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		EFCF700A264D270A009EFC16 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		EFCF700E264D2781009EFC16 /* PunkAppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkAppTabView.swift; sourceTree = "<group>"; };
+		EFCF7010264D279E009EFC16 /* PunkAppTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkAppTabViewModel.swift; sourceTree = "<group>"; };
+		EFCF7013264D29D4009EFC16 /* View+toAnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+toAnyView.swift"; sourceTree = "<group>"; };
+		EFCF7017264D2F56009EFC16 /* BeerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCellView.swift; sourceTree = "<group>"; };
+		EFCF7019264D2F82009EFC16 /* FiniteStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiniteStateViewModel.swift; sourceTree = "<group>"; };
+		EFCF701E264D3797009EFC16 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EFCF7020264D3985009EFC16 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		EFCF7022264D39C6009EFC16 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EFCF7024264D3A26009EFC16 /* PathGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathGenerator.swift; sourceTree = "<group>"; };
+		EFCF7027264D43E4009EFC16 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		EFCF7029264D4539009EFC16 /* LoadingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellView.swift; sourceTree = "<group>"; };
+		EFCF702B264D48B3009EFC16 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		EFCF702D264D4BA2009EFC16 /* BeerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCellViewModel.swift; sourceTree = "<group>"; };
+		EFCF702F264D4DD8009EFC16 /* BrewedBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewedBadgeView.swift; sourceTree = "<group>"; };
+		EFCF7033264D5E1C009EFC16 /* BeerModelsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModelsRepository.swift; sourceTree = "<group>"; };
+		EFCF7035264D5EF9009EFC16 /* BeerDisplayingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDisplayingProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFCF6FAD264D24D0009EFC16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCF701D264D3648009EFC16 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCF6FBE264D24D2009EFC16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCF6FC9264D24D2009EFC16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFCF6FA7264D24D0009EFC16 = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FB2264D24D0009EFC16 /* Punk */,
+				EFCF6FC4264D24D2009EFC16 /* PunkTests */,
+				EFCF6FCF264D24D2009EFC16 /* PunkUITests */,
+				EFCF6FB1264D24D0009EFC16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFCF6FB1264D24D0009EFC16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FB0264D24D0009EFC16 /* Punk.app */,
+				EFCF6FC1264D24D2009EFC16 /* PunkTests.xctest */,
+				EFCF6FCC264D24D2009EFC16 /* PunkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFCF6FB2264D24D0009EFC16 /* Punk */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C97B264D78EA00CF2F7C /* Punk.entitlements */,
+				EFCF6FF7264D25AE009EFC16 /* README.md */,
+				EFCF6FE6264D257D009EFC16 /* Main */,
+				EFCF7012264D29BA009EFC16 /* Extensions */,
+				EFCF6FF9264D2632009EFC16 /* Models */,
+				EFCF6FE9264D257D009EFC16 /* Screens */,
+				EFCF6FF6264D25A0009EFC16 /* Utilities */,
+				EFCF6FEF264D257D009EFC16 /* Resources */,
+				EFCF6FB9264D24D2009EFC16 /* Preview Content */,
+			);
+			path = Punk;
+			sourceTree = "<group>";
+		};
+		EFCF6FB9264D24D2009EFC16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FBA264D24D2009EFC16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFCF6FC4264D24D2009EFC16 /* PunkTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FE1264D250C009EFC16 /* Main */,
+				EFCF6FC5264D24D2009EFC16 /* PunkTests.swift */,
+			);
+			path = PunkTests;
+			sourceTree = "<group>";
+		};
+		EFCF6FCF264D24D2009EFC16 /* PunkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FDE264D24FE009EFC16 /* Main */,
+				EFCF6FD0264D24D2009EFC16 /* PunkUITests.swift */,
+			);
+			path = PunkUITests;
+			sourceTree = "<group>";
+		};
+		EFCF6FDE264D24FE009EFC16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FDF264D24FE009EFC16 /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFCF6FE1264D250C009EFC16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FE2264D250C009EFC16 /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFCF6FE6264D257D009EFC16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FE8264D257D009EFC16 /* Info.plist */,
+				EFCF6FE7264D257D009EFC16 /* PunkApp.swift */,
+				EFCF700E264D2781009EFC16 /* PunkAppTabView.swift */,
+				EFCF7010264D279E009EFC16 /* PunkAppTabViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFCF6FE9264D257D009EFC16 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF7026264D4185009EFC16 /* SharedViews */,
+				EFCF6FEA264D257D009EFC16 /* Beers */,
+				EFCF6FEC264D257D009EFC16 /* RandomScreen */,
+				EFCF6FED264D257D009EFC16 /* BeerDetailsScreen */,
+				EFCF6FEE264D257D009EFC16 /* FavoritesScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EFCF6FEA264D257D009EFC16 /* Beers */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF7016264D2F4A009EFC16 /* Views */,
+				EFCF6FEB264D257D009EFC16 /* BeersView.swift */,
+				EFCF6FFC264D2666009EFC16 /* BeersViewModel.swift */,
+			);
+			path = Beers;
+			sourceTree = "<group>";
+		};
+		EFCF6FEC264D257D009EFC16 /* RandomScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF7000264D26A7009EFC16 /* RandomView.swift */,
+				EFCF7002264D26AE009EFC16 /* RandomViewModel.swift */,
+			);
+			path = RandomScreen;
+			sourceTree = "<group>";
+		};
+		EFCF6FED264D257D009EFC16 /* BeerDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF7004264D26D7009EFC16 /* BeerDetailsView.swift */,
+				EFCF7006264D26DE009EFC16 /* BeerDetailsViewModel.swift */,
+			);
+			path = BeerDetailsScreen;
+			sourceTree = "<group>";
+		};
+		EFCF6FEE264D257D009EFC16 /* FavoritesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF7008264D26FC009EFC16 /* FavoritesView.swift */,
+				EFCF700A264D270A009EFC16 /* FavoritesViewModel.swift */,
+			);
+			path = FavoritesScreen;
+			sourceTree = "<group>";
+		};
+		EFCF6FEF264D257D009EFC16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FF0264D257D009EFC16 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EFCF6FF6264D25A0009EFC16 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF701E264D3797009EFC16 /* API.swift */,
+				EFCF7020264D3985009EFC16 /* Endpoint.swift */,
+				EFCF7024264D3A26009EFC16 /* PathGenerator.swift */,
+				EFCF7022264D39C6009EFC16 /* APIClient.swift */,
+				EFCF6FFE264D2694009EFC16 /* AppState.swift */,
+				EFCF7033264D5E1C009EFC16 /* BeerModelsRepository.swift */,
+				EFCF7019264D2F82009EFC16 /* FiniteStateViewModel.swift */,
+				EFCF7035264D5EF9009EFC16 /* BeerDisplayingProtocol.swift */,
+				EF68C973264D6B9E00CF2F7C /* BlueButtonStyle.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EFCF6FF9264D2632009EFC16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF6FFA264D263B009EFC16 /* Beer.swift */,
+				EFCF7027264D43E4009EFC16 /* APIError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFCF7012264D29BA009EFC16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF7013264D29D4009EFC16 /* View+toAnyView.swift */,
+				EF68C977264D6F6300CF2F7C /* UIApplication+EndEditing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFCF7016264D2F4A009EFC16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF702F264D4DD8009EFC16 /* BrewedBadgeView.swift */,
+				EFCF7017264D2F56009EFC16 /* BeerCellView.swift */,
+				EFCF702D264D4BA2009EFC16 /* BeerCellViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFCF7026264D4185009EFC16 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF7029264D4539009EFC16 /* LoadingCellView.swift */,
+				EFCF702B264D48B3009EFC16 /* ErrorView.swift */,
+				EF68C975264D6E8D00CF2F7C /* SearchBar.swift */,
+				EF68C979264D737B00CF2F7C /* BeerImageView.swift */,
+			);
+			name = SharedViews;
+			path = Punk/SharedViews;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFCF6FAF264D24D0009EFC16 /* Punk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCF6FD5264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "Punk" */;
+			buildPhases = (
+				EFCF6FAC264D24D0009EFC16 /* Sources */,
+				EFCF6FAD264D24D0009EFC16 /* Frameworks */,
+				EFCF6FAE264D24D0009EFC16 /* Resources */,
+				EFCF7015264D2BEF009EFC16 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Punk;
+			packageProductDependencies = (
+				EFCF701C264D3648009EFC16 /* SDWebImageSwiftUI */,
+			);
+			productName = Punk;
+			productReference = EFCF6FB0264D24D0009EFC16 /* Punk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFCF6FC0264D24D2009EFC16 /* PunkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCF6FD8264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "PunkTests" */;
+			buildPhases = (
+				EFCF6FBD264D24D2009EFC16 /* Sources */,
+				EFCF6FBE264D24D2009EFC16 /* Frameworks */,
+				EFCF6FBF264D24D2009EFC16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFCF6FC3264D24D2009EFC16 /* PBXTargetDependency */,
+			);
+			name = PunkTests;
+			productName = PunkTests;
+			productReference = EFCF6FC1264D24D2009EFC16 /* PunkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFCF6FCB264D24D2009EFC16 /* PunkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCF6FDB264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "PunkUITests" */;
+			buildPhases = (
+				EFCF6FC8264D24D2009EFC16 /* Sources */,
+				EFCF6FC9264D24D2009EFC16 /* Frameworks */,
+				EFCF6FCA264D24D2009EFC16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFCF6FCE264D24D2009EFC16 /* PBXTargetDependency */,
+			);
+			name = PunkUITests;
+			productName = PunkUITests;
+			productReference = EFCF6FCC264D24D2009EFC16 /* PunkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFCF6FA8264D24D0009EFC16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EFCF6FAF264D24D0009EFC16 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					EFCF6FC0264D24D2009EFC16 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EFCF6FAF264D24D0009EFC16;
+					};
+					EFCF6FCB264D24D2009EFC16 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EFCF6FAF264D24D0009EFC16;
+					};
+				};
+			};
+			buildConfigurationList = EFCF6FAB264D24D0009EFC16 /* Build configuration list for PBXProject "Punk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFCF6FA7264D24D0009EFC16;
+			packageReferences = (
+				EFCF701B264D3648009EFC16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = EFCF6FB1264D24D0009EFC16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFCF6FAF264D24D0009EFC16 /* Punk */,
+				EFCF6FC0264D24D2009EFC16 /* PunkTests */,
+				EFCF6FCB264D24D2009EFC16 /* PunkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFCF6FAE264D24D0009EFC16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCF6FF8264D25AE009EFC16 /* README.md in Resources */,
+				EFCF6FBB264D24D2009EFC16 /* Preview Assets.xcassets in Resources */,
+				EFCF6FF5264D257D009EFC16 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCF6FBF264D24D2009EFC16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCF6FCA264D24D2009EFC16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFCF7015264D2BEF009EFC16 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFCF6FAC264D24D0009EFC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCF7030264D4DD8009EFC16 /* BrewedBadgeView.swift in Sources */,
+				EFCF700F264D2781009EFC16 /* PunkAppTabView.swift in Sources */,
+				EFCF7009264D26FC009EFC16 /* FavoritesView.swift in Sources */,
+				EFCF700B264D270A009EFC16 /* FavoritesViewModel.swift in Sources */,
+				EFCF7023264D39C6009EFC16 /* APIClient.swift in Sources */,
+				EFCF6FFD264D2666009EFC16 /* BeersViewModel.swift in Sources */,
+				EFCF7003264D26AE009EFC16 /* RandomViewModel.swift in Sources */,
+				EFCF701A264D2F82009EFC16 /* FiniteStateViewModel.swift in Sources */,
+				EFCF7025264D3A26009EFC16 /* PathGenerator.swift in Sources */,
+				EF68C974264D6B9E00CF2F7C /* BlueButtonStyle.swift in Sources */,
+				EFCF702C264D48B3009EFC16 /* ErrorView.swift in Sources */,
+				EF68C978264D6F6300CF2F7C /* UIApplication+EndEditing.swift in Sources */,
+				EFCF6FFF264D2694009EFC16 /* AppState.swift in Sources */,
+				EFCF7021264D3985009EFC16 /* Endpoint.swift in Sources */,
+				EFCF7036264D5EF9009EFC16 /* BeerDisplayingProtocol.swift in Sources */,
+				EFCF7018264D2F56009EFC16 /* BeerCellView.swift in Sources */,
+				EF68C97A264D737B00CF2F7C /* BeerImageView.swift in Sources */,
+				EFCF7007264D26DE009EFC16 /* BeerDetailsViewModel.swift in Sources */,
+				EFCF6FF4264D257D009EFC16 /* BeersView.swift in Sources */,
+				EFCF7011264D279E009EFC16 /* PunkAppTabViewModel.swift in Sources */,
+				EF68C976264D6E8D00CF2F7C /* SearchBar.swift in Sources */,
+				EFCF7001264D26A7009EFC16 /* RandomView.swift in Sources */,
+				EFCF6FFB264D263B009EFC16 /* Beer.swift in Sources */,
+				EFCF7014264D29D4009EFC16 /* View+toAnyView.swift in Sources */,
+				EFCF6FF2264D257D009EFC16 /* PunkApp.swift in Sources */,
+				EFCF701F264D3797009EFC16 /* API.swift in Sources */,
+				EFCF702E264D4BA2009EFC16 /* BeerCellViewModel.swift in Sources */,
+				EFCF702A264D4539009EFC16 /* LoadingCellView.swift in Sources */,
+				EFCF7005264D26D7009EFC16 /* BeerDetailsView.swift in Sources */,
+				EFCF7034264D5E1C009EFC16 /* BeerModelsRepository.swift in Sources */,
+				EFCF7028264D43E4009EFC16 /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCF6FBD264D24D2009EFC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCF6FC6264D24D2009EFC16 /* PunkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCF6FC8264D24D2009EFC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCF6FD1264D24D2009EFC16 /* PunkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFCF6FC3264D24D2009EFC16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCF6FAF264D24D0009EFC16 /* Punk */;
+			targetProxy = EFCF6FC2264D24D2009EFC16 /* PBXContainerItemProxy */;
+		};
+		EFCF6FCE264D24D2009EFC16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCF6FAF264D24D0009EFC16 /* Punk */;
+			targetProxy = EFCF6FCD264D24D2009EFC16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EFCF6FD3264D24D2009EFC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFCF6FD4264D24D2009EFC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFCF6FD6264D24D2009EFC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Punk/Punk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Punk/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Punk/Main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.Punk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFCF6FD7264D24D2009EFC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Punk/Punk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Punk/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Punk/Main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.Punk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFCF6FD9264D24D2009EFC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				INFOPLIST_FILE = PunkTests/Main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.PunkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Punk.app/Punk";
+			};
+			name = Debug;
+		};
+		EFCF6FDA264D24D2009EFC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				INFOPLIST_FILE = PunkTests/Main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.PunkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Punk.app/Punk";
+			};
+			name = Release;
+		};
+		EFCF6FDC264D24D2009EFC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				INFOPLIST_FILE = PunkUITests/Main/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.PunkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Punk;
+			};
+			name = Debug;
+		};
+		EFCF6FDD264D24D2009EFC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L5HVACJ6D;
+				INFOPLIST_FILE = PunkUITests/Main/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.punk.ios.PunkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Punk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFCF6FAB264D24D0009EFC16 /* Build configuration list for PBXProject "Punk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCF6FD3264D24D2009EFC16 /* Debug */,
+				EFCF6FD4264D24D2009EFC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCF6FD5264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "Punk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCF6FD6264D24D2009EFC16 /* Debug */,
+				EFCF6FD7264D24D2009EFC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCF6FD8264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "PunkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCF6FD9264D24D2009EFC16 /* Debug */,
+				EFCF6FDA264D24D2009EFC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCF6FDB264D24D2009EFC16 /* Build configuration list for PBXNativeTarget "PunkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCF6FDC264D24D2009EFC16 /* Debug */,
+				EFCF6FDD264D24D2009EFC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFCF701B264D3648009EFC16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFCF701C264D3648009EFC16 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFCF701B264D3648009EFC16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EFCF6FA8264D24D0009EFC16 /* Project object */;
+}
