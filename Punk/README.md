@@ -2,7 +2,7 @@
 
 [*] As a bonus this app will work on MacOS as well.
 
-[*] Swiftlint will link code if it's installed
+[*] Swiftlint will lint code if it's installed
 
 [*] Error state support. To check change this line of code to `page: 0` in `API.swift` file -- API pagination
     starts from 1 and throw and error otherwise.
