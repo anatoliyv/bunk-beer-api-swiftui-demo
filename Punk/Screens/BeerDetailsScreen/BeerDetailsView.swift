@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BeerDetailsView: View {
-    @ObservedObject var model: BeerDetailsViewModel
+    @ObservedObject var model: BeerViewModel
 
     var body: some View {
         let content = ScrollView {
@@ -62,7 +62,7 @@ struct BeerDetailsView: View {
                             }
                             .font(.subheadline)
                             .padding(.leading)
-                            .padding(.bottom, 5)
+                            .padding(.top, 5)
                         }
                     }
                     .padding([.horizontal, .top])
@@ -114,8 +114,7 @@ struct BeerDetailsView: View {
 #if DEBUG
 struct BeerDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        let model = BeerDetailsViewModel(beer: .mocks.beerPunk, appState: AppState.mock)
-        model.prepareForPreview()
+        let model = BeerViewModel(beer: .mocks.beerPunk, appState: AppState.mock)
 
         let view = NavigationView {
             BeerDetailsView(model: model)

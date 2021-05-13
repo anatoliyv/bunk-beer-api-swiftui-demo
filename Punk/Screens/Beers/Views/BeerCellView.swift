@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BeerCellView: View {
-    @ObservedObject var model: BeerCellViewModel
+    @ObservedObject var model: BeerViewModel
 
     var body: some View {
         HStack(alignment: .top) {
@@ -24,8 +24,8 @@ struct BeerCellView: View {
                 Text(model.title)
                     .font(.headline)
 
-                if !model.description.isEmpty {
-                    Text(model.description)
+                if !model.subtitle.isEmpty {
+                    Text(model.subtitle)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .padding(.top, 5)
@@ -46,7 +46,7 @@ struct BeerCellView: View {
             Button(
                 action: { model.pressedFavorite() },
                 label: {
-                    Text(model.favoriteButtonText)
+                    Text(model.favoriteButtonTitle)
                     Image(systemName: model.favoriteImageName)
                 })
         }
@@ -57,7 +57,7 @@ struct BeerCellView: View {
 #if DEBUG
 struct BeerCellView_Previews: PreviewProvider {
     static var previews: some View {
-        let model = BeerCellViewModel(beer: Beer.mocks.beerPunk, appState: AppState.mock)
+        let model = BeerViewModel(beer: Beer.mocks.beerPunk, appState: AppState.mock)
         let view = List {
             BeerCellView(model: model)
         }

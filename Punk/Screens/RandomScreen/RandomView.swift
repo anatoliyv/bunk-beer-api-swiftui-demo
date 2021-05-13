@@ -26,7 +26,7 @@ struct RandomView: View {
                         .padding()
                 }
 
-                let detailsModel = model.detailsModel(for: model.beer)
+                let detailsModel = model.model(for: model.beer)
                 NavigationLink(destination: BeerDetailsView(model: detailsModel)) {
                     HStack {
                         Text("See details")

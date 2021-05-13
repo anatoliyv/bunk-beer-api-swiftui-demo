@@ -1,5 +1,5 @@
 //
-//  BeerDetailsViewModel.swift
+//  BeerViewModel.swift
 //  Punk
 //
 //  Created by Anatoliy Voropay on 13.05.2021.
@@ -8,8 +8,8 @@
 import Combine
 import Foundation
 
-class BeerDetailsViewModel: ObservableObject {
-    @Published var isFavorited: Bool = false
+class BeerViewModel: ObservableObject {
+    @Published var isFavorited: Bool
 
     private(set) var beer: Beer
 
@@ -19,19 +19,13 @@ class BeerDetailsViewModel: ObservableObject {
 
     init(beer: Beer, appState: AppState) {
         self.beer = beer
-        self.isFavorited = appState.isBeerFavorited(beer)
         self.appState = appState
-
-        setupObservables()
-    }
-
-    private func setupObservables() {
-
+        self.isFavorited = appState.isBeerFavorited(beer)
     }
 }
 
 // MARK: - Properties
-extension BeerDetailsViewModel {
+extension BeerViewModel {
     var title: String {
         beer.name
     }
@@ -79,16 +73,8 @@ extension BeerDetailsViewModel {
 }
 
 // MARK: - Actions
-extension BeerDetailsViewModel {
+extension BeerViewModel {
     func pressedFavorite() {
         appState.toggleFavorite(for: beer)
     }
 }
-
-#if DEBUG
-extension BeerDetailsViewModel {
-    func prepareForPreview() {
-        beer = .mocks.beerPunk
-    }
-}
-#endif

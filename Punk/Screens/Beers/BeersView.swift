@@ -24,9 +24,9 @@ struct BeersView: View {
                     if !model.beers.isEmpty {
                         Section {
                             ForEach(model.beers) { beer in
-                                let detailsModel = model.detailsModel(for: beer)
+                                let detailsModel = model.model(for: beer)
                                 NavigationLink(destination: BeerDetailsView(model: detailsModel)) {
-                                    BeerCellView(model: model.cellModel(for: beer))
+                                    BeerCellView(model: detailsModel)
                                 }
                             }
                         }

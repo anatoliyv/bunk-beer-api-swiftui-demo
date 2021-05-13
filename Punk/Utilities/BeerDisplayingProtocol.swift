@@ -12,11 +12,7 @@ protocol BeerDisplayingProtocol {
 }
 
 extension BeerDisplayingProtocol {
-    func detailsModel(for beer: Beer) -> BeerDetailsViewModel {
-        appState.detailsModel(for: beer)
-    }
-
-    func cellModel(for beer: Beer) -> BeerCellViewModel {
-        appState.cellModel(for: beer)
+    func model(for beer: Beer) -> BeerViewModel {
+        appState.model(for: beer)
     }
 }

@@ -24,9 +24,9 @@ struct FavoritesView: View {
                     : ""
                 Section(footer: Text(message)) {
                     ForEach(model.beers) { beer in
-                        let detailsModel = model.detailsModel(for: beer)
-                        NavigationLink(destination: BeerDetailsView(model: detailsModel)) {
-                            BeerCellView(model: model.cellModel(for: beer))
+                        let model = model.model(for: beer)
+                        NavigationLink(destination: BeerDetailsView(model: model)) {
+                            BeerCellView(model: model)
                         }
                     }
                     .onDelete { model.pressedDelete(indexes: $0) }

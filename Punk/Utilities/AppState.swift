@@ -26,12 +26,8 @@ class AppState: ObservableObject {
         loadFavoriteFromUserDefaults()
     }
 
-    func detailsModel(for beer: Beer) -> BeerDetailsViewModel {
-        repository.detailsModel(for: beer)
-    }
-
-    func cellModel(for beer: Beer) -> BeerCellViewModel {
-        repository.cellModel(for: beer)
+    func model(for beer: Beer) -> BeerViewModel {
+        repository.model(for: beer)
     }
 }
 
@@ -49,15 +45,13 @@ extension AppState {
 
     private func addToFavorite(_ beer: Beer) {
         favoriteBeers.append(beer)
-        cellModel(for: beer).isFavorited = true
-        detailsModel(for: beer).isFavorited = true
+        model(for: beer).isFavorited = true
         updateFavoriteUserDefaults()
     }
 
     private func removeFromFavorite(_ beer: Beer) {
         favoriteBeers.removeAll { $0 == beer }
-        cellModel(for: beer).isFavorited = false
-        detailsModel(for: beer).isFavorited = false
+        model(for: beer).isFavorited = false
         updateFavoriteUserDefaults()
     }
 
